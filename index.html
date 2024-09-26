@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Rata-rata Nilai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Rata-rata Nilai</h1>
+        <div id="inputSection">
+            <label for="jumlahPelajaran">Jumlah Mata Pelajaran:</label>
+            <input type="number" id="jumlahPelajaran" min="1" required>
+            <button onclick="mulaiInput()">Mulai Input Nilai</button>
+        </div>
+        <div id="nilaiSection" style="display:none;">
+            <h2>Masukkan Nilai</h2>
+            <div id="nilaiInputs"></div>
+            <button onclick="hitungRataRata()">Hitung Rata-rata</button>
+        </div>
+        <div id="hasilSection" style="display:none;">
+            <h2>Hasil</h2>
+            <p id="hasilRataRata"></p>
+            <button onclick="reset()">Hitung Lagi</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
